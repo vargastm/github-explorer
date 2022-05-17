@@ -1,29 +1,57 @@
 section.repository-list {
-  margin: 40px;
+  div.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #8257E6;
+    height: 200px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
 
-  h1 {
-    margin-bottom: 16px;
+    h1 {
+      color: #FFFFFF;
+      font-size: 2rem;
+    }
   }
 
-  ul {
-    list-style: none;
+  div.repositories {
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
 
-    li {
-      & + li {
-        margin-top: 20px;
-      }
+    ul {
+      list-style: none;
+      width: 500px;
+      
+      li {
+        min-height: 160px;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding: 30px 30px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
 
-      p {
-        font-size: 14px;
-        color: #444444;
-        margin-top: 8px;
-      }
+        & + li {
+          margin-top: 20px;
+        }
 
-      a {
-        display: inline-block;
-        margin-top: 16px;
-        text-decoration: none;
-        color: #8257E6;
+        p {
+          font-size: 14px;
+          color: #444444;
+          margin-top: 8px;
+        }
+
+        a {
+          display: inline-block;
+          margin-top: 16px;
+          text-decoration: none;
+          color: #8257E6;
+        }
       }
     }
   }
